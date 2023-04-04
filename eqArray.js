@@ -19,7 +19,7 @@ let eqArrays = function(first, second) {
     if (first[i] !== second[i]) {
       return false;
     }
-}
+  }
  
   return true;
   
