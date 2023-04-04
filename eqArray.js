@@ -1,4 +1,4 @@
-/* eslint-disable */
+
 
 
 //Functions
@@ -15,8 +15,8 @@ let eqArrays = function(first, second) {
   let a = first.join("");
   let b = second.join("");
   let out = (a === b);
-  //return out;
-  console.log(out);
+  return out;
+  
 
 };
 
