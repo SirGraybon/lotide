@@ -12,13 +12,22 @@ let assertEqual = function(actual, expected) {
 };
 
 let eqArrays = function(first, second) {
-  let a = first.join("");
-  let b = second.join("");
-  let out = (a === b);
-  return out;
+  if (first.length !== second.length) {
+    return false;
+  }
+  for (let i = 0; i < first.length; i++) {
+    if (first[i] !== second[i]) {
+      return false;
+    }
+}
+ 
+  return true;
   
 
 };
 
 //console.log(eqArrays(45,));
+assertEqual(eqArrays(["1, 2, 3"], ["1, 2, 3"]), true);
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
+
