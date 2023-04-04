@@ -16,5 +16,5 @@ let tail = function(input) {
 };
 
 console.log(tail("hello"));
-assertEqual(tail("Hello"), "ello")
-assertEqual(tail("Hello").length, 4)
+assertEqual(tail("Hello"), "ello");
+assertEqual(tail("Hello").length, 4);
