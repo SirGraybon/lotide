@@ -19,7 +19,7 @@ let assertsArraysEqual = function(first, second) {
     console.log(`❌ Assertation failed: these arrays do not match 🤦‍♀️`);
   }
 };
-
+// alternate solution
 // let without = function(source, toRemove) {
 //   let output = [];
 //   for (let i = 0; i < source.length; i++) {

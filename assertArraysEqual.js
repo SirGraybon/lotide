@@ -16,7 +16,7 @@ let eqArrays = function(first, second) {
 };
 
 
-//
+
 let assertsArraysEqual = function(first, second) {
   
   if (eqArrays(first, second)) {
