@@ -38,7 +38,7 @@ let middle = function(arr) {
     return midArr;
   }
   if (!isEven(items)) {
-    return arr[middle];
+    return [arr[middle]];
   }
   if (isEven(items)) {
     return [arr[middle - 1], arr[middle]];
@@ -53,3 +53,5 @@ let isEven = function(x) {
 
 
 assertsArraysEqual(middle([1,2,3,4,5,6]), [3,4]);
+console.log(middle([1,2,3,4,5]));
+assertsArraysEqual(middle([1,2,3,4,5]), [3]);
