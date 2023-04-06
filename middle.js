@@ -55,3 +55,15 @@ let isEven = function(x) {
 assertsArraysEqual(middle([1,2,3,4,5,6]), [3,4]);
 console.log(middle([1,2,3,4,5]));
 assertsArraysEqual(middle([1,2,3,4,5]), [3]);
+
+
+
+const myObject = {
+  a: 6,
+  b: "abc",
+  c: true,
+  d: null,
+};
+
+console.log(myObject["a"]);
+console.log(myObject["e"]);

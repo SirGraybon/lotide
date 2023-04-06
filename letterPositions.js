@@ -12,7 +12,7 @@ let eqArrays = function(first, second) {
   return true;
 };
 
-let assertsArraysEqual = function(first, second) {
+let assertArraysEqual = function(first, second) {
   
   if (eqArrays(first, second)) {
     console.log("✨ Assertation passed, these arrays match 🎉");
@@ -39,4 +39,4 @@ const letterPositions = function(sentence) {
 
 
 
-console.log(letterPositions("lighthouse in the house"));
+assertArraysEqual(letterPositions("hello").e, [1]);
