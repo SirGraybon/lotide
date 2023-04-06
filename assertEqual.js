@@ -1,4 +1,4 @@
-//Function
+//Assertation Function
 let assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertation passed: ${actual} === ${expected}`);
