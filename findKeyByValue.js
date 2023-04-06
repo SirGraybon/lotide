@@ -22,7 +22,7 @@ let findKeyByValue = function(object, value) {
 // serches for value key by key and retunrs key when found
 //if value not present - return undefined
 
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
