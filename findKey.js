@@ -20,7 +20,7 @@ let findKey = function(object, callBack) {
       return keys;
     }
   }
-}
+};
 
 
 //test cases

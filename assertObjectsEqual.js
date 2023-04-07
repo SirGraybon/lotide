@@ -61,8 +61,10 @@ let eqObjects = function(object1, object2) {
 
 
 let assertObjectEqual = function(actual, expected) {
+  const inspect = require('util').inspect;
+  console.log(`Example label: ${inspect(actual)}`);
   if (eqObjects(actual, expected)) {
-    console.log("✨ Assertation passed, these arrays match 🎉");
+    console.log(`✨ Assertation passed, these arrays match 🎉  ${inspect(actual)}  === ${inspect(expected)}`);
   } else {
     console.log(`❌ Assertation failed: these arrays do not match 🤦‍♀️`);
   }
