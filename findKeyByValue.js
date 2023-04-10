@@ -11,7 +11,6 @@ let assertEqual = function(actual, expected) {
 //findKey Function
 let findKeyByValue = function(object, value) {
   for (let keys in object) {
-    console.log(keys);
     if (object[keys] === value) {
       return keys;
     }
@@ -19,13 +18,16 @@ let findKeyByValue = function(object, value) {
   }
 
 };
+
+
+module.exports = findKeyByValue;
 // serches for value key by key and retunrs key when found
 //if value not present - return undefined
 
 const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
+  drama: "The Wire"
 };
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");

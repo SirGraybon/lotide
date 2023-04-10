@@ -14,8 +14,8 @@ let flatten = function(arr) {
   console.log(Array.isArray(output));
   return output;
 };
-  
 
+module.exports = flatten;
 
 
 

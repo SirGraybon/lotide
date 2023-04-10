@@ -1,9 +1,12 @@
 //import
 const tail = require('../tail');
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 
 
 //test cases
 
-assertEqual(tail("Hello"), "ello");
-assertEqual(tail("Hello").length, 4);
+describe("#tail", () => {
+  it("should return ello, when given hello", () => {
+    assert.strictEqual(tail("hello"), "ello");
+  });
+});

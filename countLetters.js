@@ -1,3 +1,5 @@
+const { count } = require("console");
+
 //Assertation Function
 let assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -8,24 +10,7 @@ let assertEqual = function(actual, expected) {
 };
 
 
-// //countLetters Function
-// let countLetters = function(word) {
-//   let noSpace = word.split(" ").join("")
-//   let output = {};
-//   console.log(noSpace)
-//   for (let letters of noSpace) {
-//     if (letters in output) {
-//       output[letters] += 1;
 
-//     } else {
-//       output[letters] = 1;
-//     }
-//   }
-//   return output;
-// };
-
-
-//Gary solution
 let countLetters = function(word) {
   const results = {};
 
@@ -43,5 +28,7 @@ let countLetters = function(word) {
   }
   return results;
 };
+
+module.exports = countLetters;
 
 console.log(countLetters("the absolute absurdaty of it all"));

@@ -19,16 +19,6 @@ let assertsArraysEqual = function(first, second) {
     console.log(`❌ Assertation failed: these arrays do not match 🤦‍♀️`);
   }
 };
-// alternate solution
-// let without = function(source, toRemove) {
-//   let output = [];
-//   for (let i = 0; i < source.length; i++) {
-//     if (!(toRemove.includes(source[i]))) {
-//       output.push(source[i]);
-//     }
-//   }
-//   return output;
-// };
 
 let without = function(source, toRemove) {
   let output = [];
@@ -40,7 +30,7 @@ let without = function(source, toRemove) {
         console.log(`match found: source ${source[i]} === toRemove ${toRemove[y]}`);
         break;
       }
-      
+
       if (toRemove.length - 1 === y) {
         output.push(source[i]);
       }
@@ -48,5 +38,8 @@ let without = function(source, toRemove) {
   }
   return output;
 };
+
+
+module.exports = without;
 console.log(without(["1", "2", "3"], [1, 2, "3"]));
 console.log(without([1, 2, 3], [1]));

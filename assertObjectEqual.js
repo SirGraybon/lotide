@@ -16,9 +16,9 @@ let eqArrays = function(first, second) {
       return false;
     }
   }
- 
+
   return true;
-  
+
 
 };
 
@@ -28,7 +28,7 @@ let eqObjects = function(object1, object2) {
   console.log(keys1);
   let keys2 = Object.keys(object2);
   console.log(keys2);
-  
+
   // tests number of keys are equal
   if (keys1.length !== keys2.length) {
     console.log(false);
@@ -70,10 +70,10 @@ let assertObjectEqual = function(actual, expected) {
   }
 };
 
-
+module.exports = assertObjectEqual;
 
 
 const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
 const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
 //const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
-assertObjectEqual(multiColorShirtObject  , anotherMultiColorShirtObject);
+assertObjectEqual(multiColorShirtObject, anotherMultiColorShirtObject);

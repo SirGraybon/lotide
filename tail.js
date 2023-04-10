@@ -1,10 +1,8 @@
 
 let tail = function(input) {
-  let output = [];
-  for (let i = 1; i < input.length; i ++) {
-    output.push(input[i]);
-  }
-  return output.join("");
+  // input.split("").shift;
+  return input.split("").slice(1).join("");
 };
 module.exports = tail;
 
+console.log(tail(""));
