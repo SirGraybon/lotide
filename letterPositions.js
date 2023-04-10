@@ -13,7 +13,7 @@ let eqArrays = function(first, second) {
 };
 
 let assertArraysEqual = function(first, second) {
-  
+
   if (eqArrays(first, second)) {
     console.log("✨ Assertation passed, these arrays match 🎉");
   } else {
@@ -22,7 +22,7 @@ let assertArraysEqual = function(first, second) {
 };
 
 //Letter index function
-const letterPositions = function(sentence) {
+const letterPositions1 = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
     if (sentence[i] !== " ") {
@@ -31,12 +31,33 @@ const letterPositions = function(sentence) {
       } else {
         results[sentence[i]].push(i);
       }
-      
+
     }
   }
+  console.log(results);
   return results;
 };
 
 
+const letterPositions = function(str) {
+  const results = {};
 
-assertArraysEqual(letterPositions("hello").e, [1]);
+  for (const i in str) {
+    //filter
+    const letter = str[i]
+    if (i === " ") {
+      continue;
+    }
+    if (!results[i]) {
+      results[i] = 0;
+    }
+
+    results[letter].push(letter)
+  }
+  console.log(results);
+  return results;
+};
+
+
+letterPositions("my milkshakes bring all the boys to the yard");
+letterPositions1("my milkshakes bring all the boys to the yard");

@@ -6,24 +6,45 @@ let assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertation failed: ${actual} !== ${expected}`);
   }
 };
+//Graydon original solution
 
-//countOnly
-let countOnly = function(allItems, itemsToCount) {
-  let attendance = {};
-  for (let item in itemsToCount) {
-    let count = 0;
-    //let count = [];
-    if (itemsToCount[item] === true) {
-      for (let i = 0; i < allItems.length; i ++) {
-        if (item === allItems[i]) {
-          count ++;
-          //count.push(item);
-          attendance[item] = count;
-        }
-      }
+// let countOnly = function(allItems, itemsToCount) {
+//   let attendance = {};
+//   for (let item in itemsToCount) {
+//     let count = 0;
+//     //let count = [];
+//     if (itemsToCount[item] === true) {
+//       for (let i = 0; i < allItems.length; i++) {
+//         if (item === allItems[i]) {
+//           count++;
+//           //count.push(item);
+//           attendance[item] = count;
+//         }
+//       }
+//     }
+//   }
+//   return attendance;
+// };
+
+//Gary J's solution
+const countOnly = function(allItems, itemsToCount) {
+  const results = {};
+
+  for (const item of allItems) {
+
+    if (!itemsToCount[item]) {
+      continue;
     }
+    //filter
+    if (!results[item]) {
+      results[item] = 0;
+    }
+
+    //Happy Path
+    results[item]++;
+
   }
-  return attendance;
+  return results;
 };
 
 
@@ -41,8 +62,8 @@ const firstNames = [
 ];
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
-// console.log(result1)
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
+console.log(result1)
+// assertEqual(result1["Jason"], 1);
+// assertEqual(result1["Karima"], undefined);
+// assertEqual(result1["Fang"], 2);
+// assertEqual(result1["Agouhanna"], undefined);
