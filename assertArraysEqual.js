@@ -3,7 +3,6 @@
 const eqArray = require("./eqArray");
 
 let assertArraysEqual = function(first, second) {
-  console.log(first);
 
   if (eqArray(first, second)) {
     console.log("✨ Assertation passed, these arrays match 🎉");
