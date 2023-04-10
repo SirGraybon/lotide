@@ -7,7 +7,6 @@ let assertEqual = function(actual, expected) {
   }
 };
 
-// Test code
-assertEqual("Lighthouse Labs", "bootcamp");
-assertEqual(1,1);
-assertEqual("Good boy","good boy");
+
+//Exports Function
+module.exports = assertEqual;
