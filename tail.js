@@ -1,11 +1,3 @@
-//Function
-let assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertation passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertation failed: ${actual} !== ${expected}`);
-  }
-};
 
 let tail = function(input) {
   let output = [];
@@ -14,7 +6,5 @@ let tail = function(input) {
   }
   return output.join("");
 };
+module.exports = tail;
 
-console.log(tail("hello"));
-assertEqual(tail("Hello"), "ello");
-assertEqual(tail("Hello").length, 4);
