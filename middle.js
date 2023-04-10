@@ -19,15 +19,6 @@ let assertsArraysEqual = function(first, second) {
     console.log(`❌ Assertation failed: these arrays do not match 🤦‍♀️`);
   }
 };
-// middle functions
-// accept source array
-//determine length of source
-//loop through source array
-//output new array
-
-
-
-
 
 
 let middle = function(arr) {

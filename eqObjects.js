@@ -8,7 +8,7 @@ let assertEqual = function(actual, expected) {
 
 //import functions
 //const assertEqual = require('./assertEqual');
-const eqArrays = require('./eqArray');
+const eqArray = require('./eqArray');
 
 
 
@@ -33,7 +33,7 @@ let eqObjects = function(object1, object2) {
       continue;
     }
     if (Array.isArray(object1[keys])) {
-      if (!eqArrays(object1[keys], object2[keys])) {
+      if (!eqArray(object1[keys], object2[keys])) {
         return false;
       }
 

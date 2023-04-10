@@ -1,5 +1,6 @@
 
 let eqArray = function(first, second) {
+  console.log(first);
   if (first.length !== second.length) {
     return false;
   }
