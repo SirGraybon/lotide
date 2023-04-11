@@ -15,5 +15,6 @@ module.exports = map;
 
 
 //tast cases
-const words = ["ground", "control"]; //, "to", "major", "tom"];
+const words = ["ground", "control", "to", "major", "tom"];
 
+console.log(map(words, () => words.reverse()));
