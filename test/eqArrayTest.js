@@ -1,6 +1,6 @@
 // import
 const assert = require('chai').assert;
-const eqArray = require('../eqArray');
+const { eqArray } = require("../index");
 
 describe("#eqArray", () => {
   it("returns True when fed matching arrays", () => {
