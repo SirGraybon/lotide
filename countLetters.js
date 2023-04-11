@@ -1,15 +1,3 @@
-const { count } = require("console");
-
-//Assertation Function
-let assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertation passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertation failed: ${actual} !== ${expected}`);
-  }
-};
-
-
 
 let countLetters = function(word) {
   const results = {};
@@ -31,4 +19,4 @@ let countLetters = function(word) {
 
 module.exports = countLetters;
 
-console.log(countLetters("the absolute absurdaty of it all"));
+// console.log(countLetters("the absolute absurdaty of it all"));

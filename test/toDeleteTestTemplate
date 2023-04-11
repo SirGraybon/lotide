@@ -1,0 +1,11 @@
+const assert = require('chai').assert;
+const {} = require("./index");
+
+describe("#head", () => {
+  it("returns ...", () => {
+    assert.strictEqual(, );
+  });
+  it("returns '...", () => {
+    assert.strictEqual(, );
+  });
+});

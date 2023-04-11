@@ -34,12 +34,10 @@ const letterPositions = function(sentence) {
 
     }
   }
-  console.log(results);
+
   return results;
 };
 
 module.exports = letterPositions;
 
 
-letterPositions("my milkshakes bring all the boys to the yard");
-letterPositions("my milkshakes bring all the boys to the yard");

@@ -1,9 +1,9 @@
 //import functions
 
 
-let middle = function(arr) {
-  let mid = Math.floor(arr.length / 2);
-  let items = arr.length;
+const middle = function(arr) {
+  const mid = Math.floor(arr.length / 2);
+  const items = arr.length;
   if (items < 3) {
     return [];
   }
@@ -17,7 +17,7 @@ let middle = function(arr) {
 
 
 
-let isEven = function(x) {
+const isEven = function(x) {
   return (x % 2 === 0);
 };
 
