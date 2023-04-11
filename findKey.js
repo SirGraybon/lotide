@@ -1,12 +1,3 @@
-//Assertation Function
-let assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertation passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertation failed: ${actual} !== ${expected}`);
-  }
-};
-
 
 let findKey = function(object, callBack) {
   for (let keys in object) {

@@ -1,5 +1,5 @@
 
-let eqArray = function(first, second) {
+const eqArray = function(first, second) {
 
   if (first.length !== second.length) {
     return false;

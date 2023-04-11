@@ -6,12 +6,10 @@
 const eqArray = require("./eqArray")
 
 
-
-
 // eqObject function
-let eqObjects = function(object1, object2) {
-  let keys1 = Object.keys(object1);
-  let keys2 = Object.keys(object2);
+const eqObjects = function(object1, object2) {
+  const keys1 = Object.keys(object1);
+  const keys2 = Object.keys(object2);
 
   // tests number of keys are equal
   if (keys1.length !== keys2.length) {
@@ -36,9 +34,9 @@ let eqObjects = function(object1, object2) {
   }
 
   //Happy case
+
   return true;
 };
 
 module.exports = eqObjects;
-
 
