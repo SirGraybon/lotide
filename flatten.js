@@ -1,6 +1,6 @@
 
-let flatten = function(arr) {
-  let output = [];
+const flatten = function(arr) {
+  const output = [];
   for (let i = 0; i < arr.length; i++) {
     //if (typeof arr[i] === "object") {
     if (Array.isArray(arr[i])) {
@@ -11,7 +11,7 @@ let flatten = function(arr) {
       output.push(arr[i]);
     }
   }
-  console.log(Array.isArray(output));
+
   return output;
 };
 
