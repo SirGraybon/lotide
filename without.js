@@ -1,24 +1,3 @@
-//Functions
-//eqArrays
-let eqArrays = function(first, second) {
-  if (first.length !== second.length) {
-    return false;
-  }
-  for (let i = 0; i < first.length; i++) {
-    if (first[i] !== second[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-//assertArraysEqual
-let assertsArraysEqual = function(first, second) {
-  if (eqArrays(first, second)) {
-    console.log("✨ Assertation passed, these arrays match 🎉");
-  } else {
-    console.log(`❌ Assertation failed: these arrays do not match 🤦‍♀️`);
-  }
-};
 
 let without = function(source, toRemove) {
   let output = [];
